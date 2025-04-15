@@ -15,9 +15,3 @@ This is a landing page project built with **HTML**, **CSS**, **JavaScript**, and
 - **CSS**: For styling and layout.
 - **JavaScript**: For interactivity and functionality.
 - **Three.js**: For 3D rendering and animations.
-
-## How to Run the Project
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/tadyPi/ThreeJs.git
