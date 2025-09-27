@@ -16,7 +16,7 @@ function init() {
 
   // Load the existing texture
   const loader = new THREE.TextureLoader();
-  loader.load("./space2.jpg", function (texture) {
+  loader.load("./black-back-ground.jpg", function (texture) {
     // Create a canvas and draw the existing texture onto it
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
@@ -25,7 +25,7 @@ function init() {
     context.drawImage(texture.image, 0, 0);
 
     // Draw the text onto the canvas
-    context.fillStyle = "rgba(94, 94, 93, 1)";
+    context.fillStyle = "rgba(100, 100, 100, 1)";
     context.font = "8rem Arial";
     context.fillText("loadofpixels.com", 30, 528);
 
@@ -33,7 +33,11 @@ function init() {
     const newTexture = new THREE.CanvasTexture(canvas);
 
     const geometry = new THREE.BoxGeometry(2, 2, 2);
-    const material = new THREE.MeshBasicMaterial({ map: newTexture });
+    const material = new THREE.MeshBasicMaterial({
+      map: newTexture,
+      transparent: true,
+      opacity: 0.5, // Set your desired opacity here (0.0 to 1.0)
+    });
 
     cube = new THREE.Mesh(geometry, material);
     scene.add(cube);

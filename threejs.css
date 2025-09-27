@@ -47,7 +47,7 @@ canvas {
     font-weight: 200;
     text-align: center;
     background: linear-gradient(to top right, rgba(60, 56, 61, 0.6), rgba(26, 25, 25, 0.6), rgba(25, 25, 26, 0.6));
-    border: 1px solid rgba(136, 136, 136, 0.5);
+    border: 1px solid rgba(67, 67, 67, 0.5);
     border-radius: 10px;
     padding: 10px 20px;
     width: 70%;
