@@ -16,7 +16,7 @@ function init() {
 
   // Load the existing texture
   const loader = new THREE.TextureLoader();
-  loader.load("testimonials-bg1.jpg", function (texture) {
+  loader.load("space2.jpg", function (texture) {
     // Create a canvas and draw the existing texture onto it
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
@@ -25,7 +25,7 @@ function init() {
     context.drawImage(texture.image, 0, 0);
 
     // Draw the text onto the canvas
-    context.fillStyle = "rgb(196, 244, 117)";
+    context.fillStyle = "rgba(94, 94, 93, 1)";
     context.font = "8rem Arial";
     context.fillText("loadofpixels.com", 30, 528);
 
