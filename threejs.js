@@ -16,7 +16,7 @@ function init() {
 
   // Load the existing texture
   const loader = new THREE.TextureLoader();
-  loader.load("./space2.jpg", function (texture) {
+  loader.load("./testimonials-bg1.jpg", function (texture) {
     // Create a canvas and draw the existing texture onto it
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
