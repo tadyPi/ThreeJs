@@ -25,7 +25,7 @@ function init() {
     context.drawImage(texture.image, 0, 0);
 
     // Draw the text onto the canvas
-    context.fillStyle = "rgba(100, 100, 100, 1)";
+    context.fillStyle = "rgba(169, 169, 169, 1)";
     context.font = "8rem Arial";
     context.fillText("loadofpixels.com", 30, 528);
 
